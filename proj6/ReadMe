@@ -5,21 +5,25 @@ Implemented the following:
 
 Data Element – Town (Vertex)
 
-Create a Town class that holds the name of the town and a list of adjacent towns, and other fields as desired, and the traditional methods (constructors, getters/setters, toString, etc.).  It will implement the Comparable interface. 
+Create a Town class that holds the name of the town and a list of adjacent towns, and other fields as desired, and the traditional methods (constructors, getters/setters, toString, etc.).  It will implement the
+Comparable interface. 
 
 Data Element – Road (Edge)
 
-Create a class Road that can represent the edges of a Graph of Towns. The class must implement Comparable.  The class stores references to the two vertices(Town endpoints), the distance between vertices, and a name, and the traditional methods (constructors, getters/setters, toString, etc.), and a compareTo, which compares two Road objects. Since this is a undirected graph, an edge from A to B is equal to an edge from B to A.
+Create a class Road that can represent the edges of a Graph of Towns. The class must implement Comparable.  The class stores references to the two vertices(Town endpoints), the distance between vertices, and a name, 
+and the traditional methods (constructors, getters/setters, toString, etc.), and a compareTo, which compares two Road objects. Since this is a undirected graph, an edge from A to B is equal to an edge from B to A.
 
 Data Structure – Graph, implements GraphInterface
 
 Create a Graph class that implements the GraphInterface given you.  For Graph<V,E>,  V is the vertex type (a Town), E is the edge type (a Road).  
 
-Within the Graph interface is a method shortestPath, which finds the shortest path from a given source Town to a destination Town. Since there is a unique shortest path from every vertex to the source, there is a back-pointer to the previous vertex.
+Within the Graph interface is a method shortestPath, which finds the shortest path from a given source Town to a destination Town. Since there is a unique shortest path from every vertex to the source, there is a 
+back-pointer to the previous vertex.
 
 Data Manager – implements TownGraphManagerInterface
 
-TownGraphManager will hold an object of the Graph. Implement the TownGraphManagerInterface. There are methods to populate the graph (reading from a text file), add a town (vertices), add a road (edge), list all towns and all roads, and list towns adjacent to a given town. 
+TownGraphManager will hold an object of the Graph. Implement the TownGraphManagerInterface. There are methods to populate the graph (reading from a text file), add a town (vertices), add a road (edge), list all towns
+and all roads, and list towns adjacent to a given town. 
 
 Exception Classes
 
